@@ -22,3 +22,8 @@ module.exports.getSingleUser = function(req, res, next)
 {
     res.send("Routed to Single User GET: userId is "+req.params.userId);
 }
+
+module.exports.getSingleUserSpecificInventory = function(req, res, next)
+{
+    res.send("Routed to Single User GET: userId is "+req.params.userId+" and inventoryId is "+req.params.inventoryId);
+}
